@@ -123,6 +123,10 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
-        return $this->render('about');
+        $prevPageUrl = Yii::$app->request->referrer;
+
+        return $this->render('about', [
+            'prevPageUrl' => $prevPageUrl
+        ]);
     }
 }
