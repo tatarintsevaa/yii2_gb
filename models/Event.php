@@ -42,9 +42,9 @@ class Event extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
-            'is_repeat' => 'Is Repeat',
-            'is_blocking' => 'Is Blocking',
+            'name' => 'Наименование',
+            'is_repeat' => 'Событие повторяется',
+            'is_blocking' => 'Блокирующее',
         ];
     }
 

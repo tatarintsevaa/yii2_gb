@@ -52,9 +52,11 @@ class m220301_060753_add_table_day_and_event extends Migration
      */
     public function safeDown()
     {
-        echo "m220301_060753_add_table_day_and_event cannot be reverted.\n";
-
-        return false;
+        $this->dropTable('event');
+        $this->dropTable('day');
+        $this->dropTable('day_event');
+        $this->dropForeignKey('day_event_event_id', 'day_event');
+        $this->dropForeignKey('day_event_day_id', 'day_event');
     }
 
     /*
