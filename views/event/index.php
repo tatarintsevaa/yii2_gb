@@ -34,7 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'is_repeat',
             'is_blocking',
             [
-                'class' => ActionColumn::className(),
+                'class' => ActionColumn::class,
                 'urlCreator' => function ($action, Event $model, $key, $index, $column) {
                     return Url::toRoute([$action, 'id' => $model->id]);
                  }
