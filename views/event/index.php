@@ -12,6 +12,8 @@ use app\models\Event;
 
 $this->title = 'Events';
 $this->params['breadcrumbs'][] = $this->title;
+
+var_dump(number_format(74332.0272, 2)) ;die();
 ?>
 <div class="event-index">
 
